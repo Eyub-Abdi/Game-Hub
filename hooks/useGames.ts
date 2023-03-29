@@ -20,7 +20,7 @@ interface FetchGamesResponse {
 }
 
 function useGames() {
-  const [games, setGames] = useState<Game[]>()
+  const [games, setGames] = useState<Game[]>([])
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
 
