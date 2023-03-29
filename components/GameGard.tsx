@@ -11,7 +11,7 @@ interface Props {
 
 function GameGard({ game }: Props) {
   return (
-    <Card borderRadius={9} overflow="hidden">
+    <Card borderRadius={9} overflow="hidden" width="300px">
       <Image src={getOptimizedImageUrl(game.background_image)}></Image>
       <CardBody>
         <Heading fontSize="2xl">{game.name}</Heading>
