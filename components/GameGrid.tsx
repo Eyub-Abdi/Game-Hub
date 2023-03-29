@@ -7,7 +7,6 @@ import GameGard from './GameGard'
 function GameGrid() {
   const { games, error, isLoading } = useGames()
   const skeletons = [1, 2, 3, 4, 5, 6]
-  // if (isLoading) return <GameCardSkeleton />
   return (
     <>
       {error && <Text>{error}</Text>}
