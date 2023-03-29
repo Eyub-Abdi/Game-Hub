@@ -1,6 +1,7 @@
 import { Card, CardBody, Heading, HStack, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Game } from '../hooks/useGames'
+import getOptimizedImageUrl from '../services/image-url'
 import CriticScore from './CriticScore'
 import PlatformIconList from './PlatformIconList'
 
@@ -11,7 +12,7 @@ interface Props {
 function GameGard({ game }: Props) {
   return (
     <Card borderRadius={9} overflow="hidden">
-      <Image src={game.background_image}></Image>
+      <Image src={getOptimizedImageUrl(game.background_image)}></Image>
       <CardBody>
         <Heading fontSize="2xl">{game.name}</Heading>
         <HStack justifyContent="space-between">
